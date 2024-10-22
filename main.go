@@ -20,7 +20,7 @@ import (
 )
 
 var (
-	model    = resource.DefaultModelFamily.WithModel("renogy")
+	model    = resource.NewModel("rand", "renogy", "renogy")
 	readings map[string]interface{}
 )
 
