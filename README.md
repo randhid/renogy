@@ -1,4 +1,4 @@
-# [`renogy` module](<INSERT LINK TO MODULE REPO>)
+# [`renogy` module](<https://app.viam.com/module/rand/renogy>)
 
 This [module](https://docs.viam.com/registry/modular-resources/) implements a `rand:renogy:renogy` model as a `rdk:component:power_sensor`.
 
