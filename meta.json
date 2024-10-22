@@ -1,0 +1,22 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "rand:renogy",
+  "visibility": "private",
+  "url": "https://github.com/randhid/renogy",
+  "description": "",
+  "models": [
+    {
+      "api": "rdk:component:power_sensor",
+      "model": "rand:renogy:renogy"
+    }
+  ],
+  "entrypoint": "",
+  "build": {
+    "build": "make --always-make module.tar.gz",
+    "arch": [
+      "linux/amd64",
+      "linux/arm64",
+      "darwin/arm64"
+    ]
+  }
+}
