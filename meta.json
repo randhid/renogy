@@ -1,16 +1,16 @@
 {
   "$schema": "https://dl.viam.dev/module.schema.json",
   "module_id": "rand:renogy",
-  "visibility": "private",
+  "visibility": "public",
   "url": "https://github.com/randhid/renogy",
-  "description": "",
+  "description": "Viam module for the renogy charge sensor as a power sensor",
   "models": [
     {
       "api": "rdk:component:power_sensor",
       "model": "rand:renogy:renogy"
     }
   ],
-  "entrypoint": "",
+  "entrypoint": "bin/renogy",
   "build": {
     "build": "make --always-make module.tar.gz",
     "arch": [
