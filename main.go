@@ -20,12 +20,12 @@ import (
 )
 
 var (
-	model    = resource.NewModel("rand", "renogy", "renogy")
+	Model    = resource.NewModel("rand", "renogy", "renogy")
 	readings map[string]interface{}
 )
 
 func main() {
-	module.ModularMain("renogy", resource.APIModel{Model: model, API: powersensor.API})
+	module.ModularMain("renogy", resource.APIModel{Model: Model, API: powersensor.API})
 }
 
 const (
@@ -70,7 +70,7 @@ type Config struct {
 func init() {
 	resource.RegisterComponent(
 		powersensor.API,
-		model,
+		Model,
 		resource.Registration[powersensor.PowerSensor, *Config]{
 			Constructor: newRenogy,
 		})

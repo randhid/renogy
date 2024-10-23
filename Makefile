@@ -5,7 +5,7 @@ UNAME_S ?= $(shell uname -s)
 
 build:
 	rm -f $(BIN_OUTPUT_PATH)/renogy
-	go build $(LDFLAGS) -o $(BIN_OUTPUT_PATH)/renogy main.go
+	go build -o $(BIN_OUTPUT_PATH)/renogy main.go
 
 module.tar.gz: build
 	rm -f $(BIN_OUTPUT_PATH)/module.tar.gz
