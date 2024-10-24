@@ -27,5 +27,8 @@ go.work.sum
 # binaries
 bin/
 
+#module
+module.tar.gz
+
 #mac
 .DS_Store

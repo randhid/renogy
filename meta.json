@@ -12,7 +12,16 @@
   ],
   "entrypoint": "bin/renogy",
   "build": {
-    "build": "make --always-make module.tar.gz",
+    "build": "make module.tar.gz",
+    "path": "module.tar.gz",
+    "darwin_deps": [
+      "go",
+      "pkg-config",
+      "nlopt-static",
+      "x264",
+      "jpeg-turbo",
+      "ffmpeg"
+    ],
     "arch": [
       "linux/amd64",
       "linux/arm64",
